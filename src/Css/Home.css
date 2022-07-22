@@ -1,0 +1,30 @@
+
+.Home-container{
+    height: 100vh;  
+    color: #fff; 
+    padding: 1rem;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+
+}
+.Img{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+}
+
+.Name{
+    font-size: 2.5rem;
+}
+.Description{
+    text-align:start;
+    font-size: 1.2rem;
+}
+
+.img-profile{
+    width: 40%;
+    border-radius: 100%;
+    margin: 0 0rem 0 1.7rem;
+}

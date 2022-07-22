@@ -12,13 +12,11 @@ function Navbar() {
   return (
     <>
       <NavContainer>
-        <h2>Navbar <span>Responsive</span></h2>
         <div className={`links ${clicked ? 'active' : ''}`}>
-          <a onClick={handleClick} href="#h">Home</a>
-          <a onClick={handleClick} href="#Shop">Shop</a>
-          <a onClick={handleClick} href="#h">About</a>
-          <a onClick={handleClick} href="#h">Contact</a>
-          <a onClick={handleClick} href="#h">Blog</a>
+          <a onClick={handleClick} href="#Home">Inicio</a>
+          <a onClick={handleClick} href="#AboutMe">Sobre mí</a>
+          <a onClick={handleClick} href="#CV">CV</a>
+          <a onClick={handleClick} href="#Contact">Contacto</a>
         </div>
         <div className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />
@@ -32,15 +30,9 @@ function Navbar() {
 export default Navbar
 
 const NavContainer = styled.nav`
-  h2{
-    color: white;
-    font-weight: 400;
-    span{
-      font-weight: bold;
-    }
-  }
+position: static;
+    top: 0px;
   padding: .4rem;
-  background-color: #333;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,18 +68,26 @@ const NavContainer = styled.nav`
   }
   .links.active{
     width: 100%;
+    height:100%;
+    background: #2f2f2f;
     display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 30%;
+    top: 0%;
     left: 0;
     right: 0;
     text-align: center;
     a{
       font-size: 2rem;
-      margin-top: 1rem;
+      margin: 2.5rem;
       color: white;
+      padding:1rem
+    }
+    a:hover{
+      background-color:#1f1f1f;
+      border-radius:3rem;
+     
     }
   }
   .burguer{
