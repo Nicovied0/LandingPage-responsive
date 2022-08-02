@@ -30,7 +30,6 @@
     width: 100%;
     display: flex;
     margin-top: 3rem;
-    background-color: azure;
     justify-content: center;
     align-items: center;
 }
@@ -41,11 +40,9 @@
 
 }
 .img-linkedin{
-    color: #fff;
     max-height: 100%;
 }
 .img-gmail{
-    color: #fff;
     max-height: 100%;
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Profile from '../Assets/Profile.jpeg'
-import Linkedin from '../Assets/linkedin-icon.svg'
-import Gmail from '../Assets/mail-icon.svg'
+import Linkedin from '../Assets/linkedin.svg'
+import Gmail from '../Assets/gmail.png'
 
 import '../Css/Home.css'
 
