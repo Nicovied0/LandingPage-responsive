@@ -30,12 +30,19 @@ function Navbar() {
 export default Navbar
 
 const NavContainer = styled.nav`
-position: static;
-    top: 0px;
+  position: static;
+  top: 0px;
   padding: .4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media(min-width: 768px){
+      position: sticky;
+      padding: 1rem;
+      background: #141313cf;
+      backdrop-filter: blur(1.5rem);
+    }
+  
   a{
     color: white;
     text-decoration: none;
@@ -55,16 +62,25 @@ position: static;
       font-size: 2rem;
       display: block;
     }
+    a:hover{  
+      width: 1rem;
+      padding:  10px 0;
+      border-radius: 10%;
+      background-color: #ffffff2d;
+    }
+    
     @media(min-width: 768px){
       position: initial;
       margin: 0;
       a{
-        font-size: 1rem;
+        font-size: 1.3rem;
         color: white;
         display: inline;
+        margin: 0 1rem;
       }
       display: block;
     }
+    
   }
   .links.active{
     width: 100%;
@@ -90,12 +106,17 @@ position: static;
      
     }
   }
+  
+  
   .burguer{
     @media(min-width: 768px){
       display: none;
     }
+   
   }
+  
 `
+
 
 const BgDiv = styled.div`
   background-color: #222;

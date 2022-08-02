@@ -7,20 +7,46 @@
 .home{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
 }
 .Img{
     display: flex;
     align-items: center;
     padding: 0 1rem 0 1rem;
+
 }
 
 .Name{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
+
+
 .Description{
     text-align:start;
     font-size: 1.2rem;
+}
+.links-icon{
+    width: 100%;
+    display: flex;
+    margin-top: 3rem;
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+}
+.a-icon{
+    
+    width: 3rem;
+    margin: 0 1.2rem;
+
+}
+.img-linkedin{
+    color: #fff;
+    max-height: 100%;
+}
+.img-gmail{
+    color: #fff;
+    max-height: 100%;
 }
 
 .img-profile{
